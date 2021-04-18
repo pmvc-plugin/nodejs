@@ -16,10 +16,13 @@ class nodejs extends PlugIn
         if (!$this[NODEJS]) {
             $this->_initNodePath();
         } else {
-            if (!\PMVC\realPath($this[NODEJS])) {
+            $nodejs = \PMVC\realPath($this[NODEJS]);
+            if (!$nodejs) {
                 throw new InvalidArgumentException(
                     'NodeJs path was not found. [' . $this[NODEJS] . ']'
                 );
+            } else {
+                $this[NODEJS] = $nodejs;
             }
         }
     }
@@ -36,11 +39,11 @@ class nodejs extends PlugIn
 
     private function _initNodePath()
     {
-        $alpinePath = '/usr/bin/node';
-        $vendorPath = __DIR__ . '/../../bin/node';
-        if (\PMVC\realPath($alpinePath)) {
+        $alpinePath = \PMVC\realPath('/usr/bin/node');
+        $vendorPath = \PMVC\realPath(__DIR__ . '/../../bin/node');
+        if ($alpinePath) {
             $this[NODEJS] = $alpinePath;
-        } elseif (\PMVC\realPath($vendorPath)) {
+        } elseif ($vendorPath) {
             $this[NODEJS] = $vendorPath;
         }
     }
