@@ -1,0 +1,27 @@
+{
+  "name": "pmvc-plugin/nodejs",
+  "description": "Nodejs Selector.",
+  "type": "library",
+  "homepage": "https://github.com/pmvc/pmvc",
+  "keywords": ["nodejs", "pmvc", "plug-in"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Hill",
+      "email": "hill@kimo.com"
+    }
+  ],
+  "require": {
+    "mouf/nodejs-installer": "v1.0.14"
+  },
+  "config": {
+    "extra": {
+      "mouf": {
+        "nodejs": {
+          "version": "^12.0.0"
+        }
+      }
+    }
+  },
+  "minimum-stability": "dev"
+}
