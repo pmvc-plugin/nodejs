@@ -1,6 +1,6 @@
 [![Latest Stable Version](https://poser.pugx.org/pmvc-plugin/nodejs/v/stable)](https://packagist.org/packages/pmvc-plugin/nodejs) 
 [![Latest Unstable Version](https://poser.pugx.org/pmvc-plugin/nodejs/v/unstable)](https://packagist.org/packages/pmvc-plugin/nodejs) 
-[![Build Status](https://travis-ci.org/pmvc-plugin/nodejs.svg?branch=master)](https://travis-ci.org/pmvc-plugin/nodejs)
+[![CircleCI](https://circleci.com/gh/pmvc-plugin/nodejs/tree/main.svg?style=svg)](https://circleci.com/gh/pmvc-plugin/nodejs/tree/main)
 [![License](https://poser.pugx.org/pmvc-plugin/nodejs/license)](https://packagist.org/packages/pmvc-plugin/nodejs)
 [![Total Downloads](https://poser.pugx.org/pmvc-plugin/nodejs/downloads)](https://packagist.org/packages/pmvc-plugin/nodejs) 
 
@@ -18,7 +18,7 @@ nodejs
 ```
 {
     "require": {
-        "pmvc-plugin/nodejs": "dev-master"
+        "pmvc-plugin/nodejs": "dev-main"
     }
 }
 ```

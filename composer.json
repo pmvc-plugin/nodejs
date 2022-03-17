@@ -14,7 +14,13 @@
   "require": {
     "mouf/nodejs-installer": "v1.0.14"
   },
+  "require-dev": {
+    "pmvc-plugin/unit": "*"
+  },
   "config": {
+    "allow-plugins": {
+      "mouf/nodejs-installer": true
+    },
     "extra": {
       "mouf": {
         "nodejs": {

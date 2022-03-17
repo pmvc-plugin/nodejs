@@ -1,9 +1,9 @@
 <?php
 namespace PMVC\PlugIn\nodejs;
 
-use PMVC_TestCase;
+use PMVC\TestCase;
 
-class NodejsTest extends PMVC_TestCase
+class NodejsTest extends TestCase
 {
     private $_plug = 'nodejs';
     function testPlugin()
